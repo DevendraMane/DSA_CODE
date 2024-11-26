@@ -5,6 +5,7 @@ import java.util.*;
 public class largest_num {
     public static int largest(int nums[]) {
         int largest_num = Integer.MIN_VALUE; // -infinity
+        // ↓ loop for scanning the given array↓
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] > largest_num) {
                 largest_num = nums[i];
