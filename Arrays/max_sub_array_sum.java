@@ -75,6 +75,7 @@ public class max_sub_array_sum {
 
     public static void main(String[] args) {
         int arr[] = { 1, -2, 6, -1, 3 };
+        int negative_arr[] = { -1, -2, -5, -2 };
         // *Brut force method: O(n³)
         // M1_SumSubArrays(arr);
 
@@ -83,5 +84,6 @@ public class max_sub_array_sum {
 
         // *Kadan's Algorithm: O(n)
         M3_SumSubArrays(arr);
+        M3_SumSubArrays(negative_arr);
     }
 }
