@@ -61,13 +61,15 @@ public class max_sub_array_sum {
         int currSum = 0;
 
         // *Special case (if all the nums in array are negative):
-        // todo: ↑Solve this 1st ↑
+
         for (int i = 0; i <= arr.length - 1; i++) {
+
             currSum += arr[i];
+            maxSum = Math.max(currSum, maxSum);
+
             if (currSum < 0) {
                 currSum = 0;
             }
-            maxSum = Math.max(currSum, maxSum);
 
         }
         System.out.println("The max sum is:" + maxSum);
@@ -75,7 +77,7 @@ public class max_sub_array_sum {
 
     public static void main(String[] args) {
         int arr[] = { 1, -2, 6, -1, 3 };
-        int negative_arr[] = { -1, -2, -5, -2 };
+        int negative_arr[] = { -2, -1, -5, -2, -1 };
         // *Brut force method: O(n³)
         // M1_SumSubArrays(arr);
 
@@ -84,6 +86,6 @@ public class max_sub_array_sum {
 
         // *Kadan's Algorithm: O(n)
         M3_SumSubArrays(arr);
-        M3_SumSubArrays(negative_arr);
+        // M3_SumSubArrays(negative_arr);
     }
 }
