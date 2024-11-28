@@ -27,7 +27,10 @@ public class bubble_sort {
 
     public static void main(String[] args) {
         int arr[] = { 5, 4, 1, 3, 2 };
+        int sorted_arr[] = { 1, 2, 3, 4, 5 };
         sort(arr); // O(n²)
         printArr(arr);
+        sort(sorted_arr); // todo: O(n²) (why this is same istead it should be done in less time)
+        printArr(sorted_arr);
     }
 }
