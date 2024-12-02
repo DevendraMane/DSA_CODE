@@ -10,7 +10,7 @@
 ## ✅ Week-Wise Plan  
 
 ### 🔹 Week 1-2: Build Strong Foundation  
-1️⃣ **Basic Sorting Algorithms**:  
+1️⃣ **Basic Sorting Algorithms**:  ✅
 - 🧮 **Bubble, Selection, Insertion Sort**  
 - 🔁 **Merge Sort, Quick Sort** (focus on recursion & divide-and-conquer)  
 - 🎯 **Counting & Radix Sort** (optional)  
