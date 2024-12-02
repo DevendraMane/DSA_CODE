@@ -14,18 +14,18 @@
 - 🧮 **Bubble, Selection, Insertion Sort**  
 - 🔁 **Merge Sort, Quick Sort** (focus on recursion & divide-and-conquer)  
 - 🎯 **Counting & Radix Sort** (optional)  
-- 📝 **Practice** sorting-related problems  
+- 📝 **Practice** sorting-related problems
 
-2️⃣ **2-D Arrays**:  
-- 🔄 Practice traversal, row-wise/column-wise sum, matrix transpose  
-- 🔍 Solve basic problem sets: Searching an element, spiral matrix  
+2️⃣ **Strings**:  
+- 🔡 Learn string manipulation: Palindrome, reverse, substring search  
+- 🧩 Practice problems: Anagrams, pattern matching (basic), string rotations 
 
 ---
 
 ### 🔹 Week 3-4: Core Data Structures  
-3️⃣ **Strings**:  
-- 🔡 Learn string manipulation: Palindrome, reverse, substring search  
-- 🧩 Practice problems: Anagrams, pattern matching (basic), string rotations  
+3️⃣**2-D Arrays**:  
+- 🔄 Practice traversal, row-wise/column-wise sum, matrix transpose  
+- 🔍 Solve basic problem sets: Searching an element, spiral matrix  
 
 4️⃣ **Bit Manipulation**:  
 - ⚡ Concepts: AND, OR, XOR, bit shifts  
