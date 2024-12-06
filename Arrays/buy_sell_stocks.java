@@ -20,7 +20,23 @@ public class buy_sell_stocks {
     }
 
     public static void main(String[] args) {
-        int prices[] = { 7, 1, 5, 3, 6, 4 };
+        int prices[] = { 100, 180, 260, 310, 40, 535, 695 };
         makeProfit(prices);
     }
 }
+
+// todo: understand this
+// class Solution {
+// public int maximumProfit(int[] prices) {
+// int maxProfit = 0;
+
+// for (int i = 1; i < prices.length; i++) {
+
+// if (prices[i] > prices[i - 1]) {
+// maxProfit += prices[i] - prices[i - 1];
+// }
+// }
+
+// return maxProfit;
+// }
+// }

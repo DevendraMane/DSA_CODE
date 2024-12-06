@@ -60,6 +60,12 @@ public class basic {
         }
         System.out.println(largest);
 
+        // * StringBuilder: (To prevent the immutabel behavior or Strings)
+        StringBuilder sb = new StringBuilder("");
+        for (char ch = 'a'; ch <= 'z'; ch++) {
+            sb.append(ch); // pichese add hona
+        }
+        System.out.println(sb);
     }
 
 }
