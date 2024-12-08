@@ -9,7 +9,7 @@
 
 ## ✅ Week-Wise Plan  
 
-### 🔹 Week 1-2: Build Strong Foundation  
+### 🔹 Week 1: Build Strong Foundation  
 1️⃣ **Basic Sorting Algorithms**:  ✅
 - 🧮 **Bubble, Selection, Insertion Sort**  
 - 🔁 **Merge Sort, Quick Sort** (focus on recursion & divide-and-conquer)  
@@ -22,7 +22,7 @@
 
 ---
 
-### 🔹 Week 3-4: Core Data Structures  
+### 🔹 Week 2-3: Core Data Structures  
 3️⃣**2-D Arrays**:  
 - 🔄 Practice traversal, row-wise/column-wise sum, matrix transpose  
 - 🔍 Solve basic problem sets: Searching an element, spiral matrix  
@@ -33,7 +33,7 @@
 
 ---
 
-### 🔹 Week 5-6: Recursion & Divide-and-Conquer  
+### 🔹 Week 4-5: Recursion & Divide-and-Conquer  
 5️⃣ **Recursion**:  
 - 🔄 Build intuition for base & recursive cases  
 - 📝 Problems: Factorial, Fibonacci, subsets, string permutations  
@@ -44,14 +44,14 @@
 
 ---
 
-### 🔹 Week 7: Complexity Analysis  
+### 🔹 Week 6: Complexity Analysis  
 7️⃣ **Time Complexity**:  
 - ⏱️ Learn Big-O, Omega, Theta notations  
 - 🛠️ Analyze algorithms studied so far (sorting, searching)  
 
 ---
 
-### 🔹 Week 8-9: Advanced Data Structures  
+### 🔹 Week 7-8: Advanced Data Structures  
 8️⃣ **Backtracking**:  
 - 🔍 Problems: N-Queens, Rat in a Maze, Sudoku solver  
 
@@ -64,7 +64,7 @@
 
 ---
 
-### 🔹 Week 10-11: Trees and Heaps  
+### 🔹 Week 9-10: Trees and Heaps  
 1️⃣1️⃣ **Binary Trees**:  
 - 🌲 Traversals: Preorder, Inorder, Postorder  
 - 📝 Problems: Height of tree, diameter, etc.  
@@ -77,7 +77,7 @@
 
 ---
 
-### 🔹 Week 12: Advanced Algorithms  
+### 🔹 Week 11: Advanced Algorithms  
 1️⃣4️⃣ **Graphs (Basics to Advanced)**:  
 - 🌐 BFS, DFS, Shortest Path (Dijkstra), Minimum Spanning Tree  
 
