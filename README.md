@@ -23,7 +23,7 @@
 ---
 
 ### 🔹 Week 2-3: Core Data Structures  
-3️⃣**2-D Arrays**:  
+3️⃣**2-D Arrays**:  ✅
 - 🔄 Practice traversal, row-wise/column-wise sum, matrix transpose  
 - 🔍 Solve basic problem sets: Searching an element, spiral matrix  
 
