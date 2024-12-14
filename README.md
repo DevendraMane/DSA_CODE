@@ -10,20 +10,20 @@
 ## ✅ Week-Wise Plan  
 
 ### 🔹 **Week 1: Build Strong Foundation**  
-1. **Basic Sorting Algorithms**  
+1. **Basic Sorting Algorithms**  ✅
    - Bubble, Selection, Insertion Sort  
    - Merge Sort, Quick Sort (focus on recursion & divide-and-conquer)  
    - Counting & Radix Sort (optional)  
    - Practice sorting-related problems
 
-2. **Strings**  
+2. **Strings**  ✅
    - String manipulation: Palindrome, reverse, substring search  
    - Practice problems: Anagrams, pattern matching (basic), string rotations
 
 ---
 
 ### 🔹 **Week 2-3: Core Data Structures**  
-3. **2-D Arrays**  
+3. **2-D Arrays**  ✅
    - Practice traversal, row/column sum, matrix transpose  
    - Solve basic problem sets: Searching an element, spiral matrix  
 
