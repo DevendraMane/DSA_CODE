@@ -3,7 +3,7 @@ package Strings;
 import java.util.Arrays;
 
 public class first_nonReapeating {
-    public static char repeatingChar1(String s) {
+    public static char nonRepeatingChar1(String s) {
         char[] sCh = s.toCharArray();
         Arrays.sort(sCh);
 
@@ -26,7 +26,7 @@ public class first_nonReapeating {
     }
 
     // * Method-2 (using abcd/"Index Mapping"/"Character Mapping")
-    public static char repeatingChar2(String s) {
+    public static char nonRepeatingChar2(String s) {
         char[] sCh = s.toCharArray();
 
         int[] freq = new int[26];
@@ -47,8 +47,8 @@ public class first_nonReapeating {
     public static void main(String[] args) {
         String s = "qbc";
 
-        System.out.println(repeatingChar1(s));
-        System.out.println(repeatingChar2(s));
+        System.out.println(nonRepeatingChar1(s));
+        System.out.println(nonRepeatingChar2(s));
         // repeatingChar(s);
     }
 }
