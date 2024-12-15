@@ -1,14 +1,33 @@
 import java.util.*;
+import java.util.Arrays;
 
 public class rough {
-    public static void rough(int n) {
-        n = 10;
-        System.out.println(n);
+    public static char repeatingChar(String s) {
+        char[] sCh = s.toCharArray();
+        Arrays.sort(sCh);
+
+        for (int i = 0; i < s.length(); i++) {
+            char currentChar = s.charAt(i);
+            int count = 0;
+
+            for (char ch : sCh) {
+                if (ch == currentChar) {
+                    count++;
+                }
+            }
+
+            if (count == 1) {
+                return currentChar;
+            }
+        }
+
+        return '$';
     }
 
     public static void main(String[] args) {
-        int num = 5;
-        rough(num);
-        System.out.println(num);
+        String s = "qbc";
+
+        System.out.println(repeatingChar(s));
+        // repeatingChar(s);
     }
 }
