@@ -5,7 +5,7 @@ public class Basic_till_lech9 {
         Pen p1 = new Pen("Cello Gripper"); // creates a pen object called p1 in the heap memory
         p1.setColor("Blue");
         // System.out.println(p1.color);
-        System.out.println(p1.getColor());
+        System.out.println("from a getter: " + p1.getColor());
         p1.setTipSize(5);
         System.out.println(p1.tipSize);
         p1.tipSize = 4;
@@ -69,6 +69,7 @@ class Pen {
     // method parameter.
     void setColor(String color) {
         this.color = color; // Resolves the conflict between the field and parameter names
+        // *observe nothing is returned here only the value is assigned
     }
 
     void setTipSize(int newTipSize) {

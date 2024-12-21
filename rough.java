@@ -2,32 +2,25 @@ import java.util.*;
 import java.util.Arrays;
 
 public class rough {
-    public static char repeatingChar(String s) {
-        char[] sCh = s.toCharArray();
-        Arrays.sort(sCh);
-
-        for (int i = 0; i < s.length(); i++) {
-            char currentChar = s.charAt(i);
-            int count = 0;
-
-            for (char ch : sCh) {
-                if (ch == currentChar) {
-                    count++;
-                }
-            }
-
-            if (count == 1) {
-                return currentChar;
+    public static void hIndex(int[] citations) {
+        // code here
+        int hIndex = 0;
+        Arrays.sort(citations);
+        for (int i = 0; i < citations.length / 2; i++) {
+            int temp = citations[i];
+            citations[i] = citations[citations.length - 1 - i];
+            citations[citations.length - 1 - i] = temp;
+            if (citations[i] >= i) {
+                hIndex++;
             }
         }
 
-        return '$';
+        System.out.println(hIndex);
+
     }
 
     public static void main(String[] args) {
-        String s = "qbc";
-
-        System.out.println(repeatingChar(s));
-        // repeatingChar(s);
+        int citations[] = { 5, 1, 2, 4, 1 };
+        hIndex(citations);
     }
 }
