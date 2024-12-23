@@ -27,11 +27,11 @@
    - Practice traversal, row/column sum, matrix transpose  
    - Solve basic problem sets: Searching an element, spiral matrix  
 
-4. **Bit Manipulation**  
+4. **Bit Manipulation**  ✅
    - Concepts: AND, OR, XOR, bit shifts  
    - Problems: Count set bits, power of 2, unique number (XOR-based)  
 
-5. **OOPS (Object-Oriented Programming)**  
+5. **OOPS (Object-Oriented Programming)**  ✅
    - Basic principles: Classes, Objects, Inheritance, Polymorphism, Encapsulation, Abstraction  
    - Practice: Design simple programs using OOPS principles
 
