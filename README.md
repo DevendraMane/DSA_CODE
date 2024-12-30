@@ -46,7 +46,7 @@
    - Understanding the approach  
    - Apply to problems like Merge Sort, Binary Search
 
-8. **Time Complexity**  
+8. **Time Complexity**  ✅
    - Big-O, Omega, Theta notations  
    - Analyze algorithms studied so far (sorting, searching)
 
