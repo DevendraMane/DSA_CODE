@@ -1,17 +1,19 @@
 import java.util.*;
 
 public class rough {
+    public static void moveZeroes(int[] nums) {
+        int n = nums.length - 1;
+        for (int i = 0; i <= n; i++) {
+            if (nums[i] == 0) {
+                nums[n] = nums[i];
+                n--;
+            }
+        }
+        System.out.println(Arrays.toString(nums));
+    }
+
     public static void main(String[] args) {
-
-        TreeSet<Integer> Tset = new TreeSet<>();
-
-        Tset.add(2);
-        Tset.add(5);
-        Tset.add(4);
-        Tset.add(3);
-        Tset.add(1);
-        Tset.add(3);
-
-        System.out.println(Tset);
+        int arr[] = { 0, 1, 0, 3, 12 };
+        moveZeroes(arr);
     }
 }
