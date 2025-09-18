@@ -1,19 +1,35 @@
 import java.util.*;
 
 public class rough {
-    public static void moveZeroes(int[] nums) {
-        int n = nums.length - 1;
-        for (int i = 0; i <= n; i++) {
-            if (nums[i] == 0) {
-                nums[n] = nums[i];
-                n--;
+    public static int[] subArray(int[] nums, int key) {
+        int start = 0;
+        int end = 0;
+        int sum = nums[0];
+
+        while (end < nums.length) {
+            end++;
+
+            if (end < nums.length) {
+                sum += nums[end];
             }
+
+            while (sum > key) {
+                sum -= nums[start];
+                start++;
+            }
+
+            if (sum == key) {
+                return Arrays.copyOfRange(nums, start, end + 1);
+            }
+
         }
-        System.out.println(Arrays.toString(nums));
+        return new int[] { -1 };
     }
 
     public static void main(String[] args) {
-        int arr[] = { 0, 1, 0, 3, 12 };
-        moveZeroes(arr);
+        int arr[] = { 1, 4, 20, 3, 10, 5 };
+        int key = 33;
+        System.out.println(Arrays.toString(subArray(arr, key)));
+        ;
     }
 }
