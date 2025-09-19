@@ -19,55 +19,57 @@ public class sub_array_with_given_sum {
     // }
 
     // *Prefix sum and HashMap method: (Better)
-    // public static int sub_array(int[] arr, int k) {
-    // int maxL = 0;
-    // int sum = 0;
+    // todo: Recall the reverse-mathematics technic-without that you will not
+    // understand this
+    public static int sub_array(int[] arr, int k) {
+        int maxL = 0;
+        int prefixSum = 0;
 
-    // HashMap<Integer, Integer> map = new HashMap<>();
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-    // for (int i = 0; i < arr.length; i++) {
-    // sum += arr[i];
+        for (int i = 0; i < arr.length; i++) {
+            prefixSum += arr[i];
 
-    // if (sum == k) {
-    // maxL = i + 1;
-    // }
-
-    // if (map.containsKey(sum - k)) {
-    // maxL = Math.max(maxL, i - map.get(sum - k));
-    // }
-
-    // if (!map.containsKey(sum)) {
-    // map.put(sum, i);
-    // }
-    // }
-    // return maxL;
-    // }
-
-    // *two pointer approach
-    // !Only for positive numbers
-    public static int sub_array(int arr[], int k) {
-        int left = 0, right = 0, sum, maxL = 0;
-        sum = arr[0];
-
-        while (right < arr.length - 1) {
-            right++;
-
-            if (right < arr.length) {
-                sum += arr[right];
+            if (prefixSum == k) {
+                maxL = i + 1;
             }
 
-            if (sum == k) {
-                maxL = Math.max(maxL, right - left + 1);
+            if (map.containsKey(prefixSum - k)) {
+                maxL = Math.max(maxL, i - map.get(prefixSum - k));
             }
 
-            while (left <= right && sum > k) {
-                sum = sum - arr[left];
-                left++;
+            if (!map.containsKey(prefixSum)) {
+                map.put(prefixSum, i);
             }
-
         }
         return maxL;
     }
+
+    // *two pointer approach
+    // !Only for positive numbers
+    // public static int sub_array(int arr[], int k) {
+    // int left = 0, right = 0, sum, maxL = 0;
+    // sum = arr[0];
+
+    // while (right < arr.length - 1) {
+    // right++;
+
+    // if (right < arr.length) {
+    // sum += arr[right];
+    // }
+
+    // if (sum == k) {
+    // maxL = Math.max(maxL, right - left + 1);
+    // }
+
+    // while (left <= right && sum > k) {
+    // sum = sum - arr[left];
+    // left++;
+    // }
+
+    // }
+    // return maxL;
+    // }
 
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 1, 1, 1, 1, 3, 3 };

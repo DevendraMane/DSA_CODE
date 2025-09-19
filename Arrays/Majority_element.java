@@ -3,70 +3,33 @@ package Arrays;
 import java.util.*;
 
 public class Majority_element {
-    public static void moveZeroes(int[] nums) {
-        int start = 0, end = 1;
 
-        while (start < nums.length && end < nums.length) {
-            if ((end == nums.length - 1) && (nums[end] == 0) && (nums[start] == 0)) {
-                break;
-            }
-            if (nums[end] == 0) {
-                if (end < nums.length - 1) {
-                    end++;
-                }
+    // *BrutForce(looping)
+    public static int maj_elem(int[] arr) {
+        int n = arr.length - 1;
+        for (int i = 0; i <= n; i++) {
 
-            } else if (nums[end] != 0 && nums[start] == 0) {
-                int temp = nums[start];
-                nums[start] = nums[end];
-                nums[end] = temp;
-                if (start < nums.length) {
+            int count = 0;
 
-                }
-                start++;
-                end++;
-            }
-            if (nums[start] != 0 && nums[end] == 0) {
-                start++;
-            }
-
-            if ((nums[start] != 0 && nums[end] != 0) && (start < nums.length && end != nums.length - 1)) {
-                start++;
-                end++;
-            }
-
-        }
-        System.out.println(Arrays.toString(nums));
-    }
-
-    public static void moveZeroesNitaj(int[] nums) {
-        int n = nums.length;
-        int s = 0, e = 1;
-
-        while (s < n && e < n) {
-            if (nums[s] != 0 && nums[e] != 0) {
-                if (s + 1 < n && nums[s + 1] == 0 && nums[e] != 0) {
-                    s++;
-                    int temp = nums[s];
-                    nums[s] = nums[e];
-                    nums[e] = temp;
-                } else {
-                    s++;
-                    e++;
+            for (int j = 0; j <= n; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
                 }
             }
-            if (nums[s] != 0 && nums[e] == 0) {
-                while (e < n && nums[e] != 0) {
-                    e++;
-                }
+
+            if (count > (n / 2)) {
+                return arr[i];
             }
         }
-        System.out.println(Arrays.toString(nums));
+        return -1;
     }
 
     public static void main(String[] args) {
-        int arr[] = { 4, 2, 4, 0, 0, 3, 0, 5, 1, 0 };
+        int arr[] = { 2, 2, 1, 1, 1, 2, 2 };
         int arr1[] = { 0, 1, 0, 3, 12 };
         int arr2[] = { 1, 0, 1 };
-        moveZeroes(arr2);
+        // System.out.println(maj_elem(arr)); // O(n²)
+        System.out.println(maj_elem(arr)); //
+        ;
     }
 }
