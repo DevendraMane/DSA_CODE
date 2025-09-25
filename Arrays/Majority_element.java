@@ -56,7 +56,7 @@ public class Majority_element {
     public static int maj_elem(int[] arr) {
         int n = arr.length;
         int elem = 0;
-        int count = 0;
+        int count = 0; // 🤔this does not represent anything
 
         // algorithm
         for (int i = 0; i < n; i++) {
