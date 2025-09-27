@@ -7,6 +7,7 @@ public class sub_array {
             int start = i;
             for (int j = i; j <= arr.length - 1; j++) {
                 int end = j;
+
                 for (int k = start; k <= end; k++) {
                     System.out.print(arr[k] + " ");
                 }

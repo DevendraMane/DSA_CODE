@@ -7,6 +7,7 @@ public class max_sub_array_sum {
     public static void M1_SumSubArrays(int arr[]) {
         int maxSum = Integer.MIN_VALUE;
         int currSum = 0;
+        int length = 0;
         for (int i = 0; i <= arr.length - 1; i++) {
             for (int j = i; j <= arr.length - 1; j++) {
                 currSum = 0; // { 2, 4, 6, 8, 10 }
@@ -15,14 +16,16 @@ public class max_sub_array_sum {
                     currSum = currSum + arr[k];
                 }
                 // System.out.println
-                if (maxSum < currSum) {
+                if (maxSum > currSum) {
                     maxSum = currSum;
                 }
                 // System.out.println(currSum);
+
+                length = j - i + 1;
             }
 
         }
-        System.out.println(maxSum);
+        System.out.println(length);
     }
 
     // *Prefix method: O(n²)
@@ -79,13 +82,13 @@ public class max_sub_array_sum {
         int arr[] = { 1, -2, 6, -1, 3 };
         int negative_arr[] = { -2, -1, -5, -2, -1 };
         // *Brut force method: O(n³)
-        // M1_SumSubArrays(arr);
+        M1_SumSubArrays(arr);
 
         // *Prefix method: O(n²)
         // M2_SumSubArrays(arr);
 
         // *Kadan's Algorithm: O(n)
-        M3_SumSubArrays(arr);
+        // M3_SumSubArrays(arr);
         // M3_SumSubArrays(negative_arr);
     }
 }
