@@ -83,7 +83,23 @@ public class basic {
         String name = "devendra";
         String realName = "zepto";
         int larger_string = name.compareTo(realName);
-        System.out.println((larger_string > 0) ? "first str is large" : "second str is large");
+        // System.out.println((larger_string > 0) ? "first str is large" : "second str
+        // is large");
+
+        // ?to convert a number string to a number
+        String numString = "1231435345412312";
+        // String numString = "deva"; ❌will not work
+
+        // System.out.println(Integer.parseInt(numString));
+
+        // ? to convert a string to char arr
+        char cArr[] = numString.toCharArray();
+        // System.out.print(cArr);
+
+        // ?substring
+        // System.out.print(numString.substring(0, 3)); //this goes till (n-1)
+        ;
+
     }
 
 }
