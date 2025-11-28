@@ -71,10 +71,10 @@ public class basic {
         // ? The old object is still unchanged (immutable), just that no variable is
         // ? referencing it anymore (so it may get garbage collected).
 
-        // * StringBuilder: (To prevent the immutabel behavior or Strings)
+        // * StringBuilder: (To prevent the immutabel behavior of Strings)
         StringBuilder sb = new StringBuilder("");
         for (char ch = 'a'; ch <= 'z'; ch++) {
-            sb.append(ch); // pichese add hona
+            sb.append(ch); // magun add hona
         }
         // System.out.println(sb);
 
